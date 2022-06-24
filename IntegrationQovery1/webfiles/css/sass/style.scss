@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+header{
+    max-width: 1440px;
+    background-color: #151B2B;
+    color: #FFFFFF;
+    h1{
+        font-size: 3rem;
+    }
+    .ensemble{
+        display: flex;
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            li:first-of-type{
+                display: flex;
+                background-color: #c2c2c2;
+                color: black;
+                padding: 0.35rem 2rem;
+            }
+            li:last-of-type{
+                background-color: #FFFFFF;
+                color: black;
+                padding: 0.4rem 0.75rem;
+            }
+        }
+    }
+    section{
+        display: flex;
+    }
+    .inline{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p:first-of-type{
+            padding-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+        p:last-of-type{
+            padding-top: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+}

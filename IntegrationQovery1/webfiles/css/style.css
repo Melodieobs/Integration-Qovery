@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+header {
+  max-width: 1440px;
+  background-color: #151B2B;
+  color: #FFFFFF;
+}
+header h1 {
+  font-size: 3rem;
+}
+header .ensemble {
+  display: flex;
+}
+header .ensemble ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header .ensemble ul li:first-of-type {
+  display: flex;
+  background-color: #c2c2c2;
+  color: black;
+  padding: 0.35rem 2rem;
+}
+header .ensemble ul li:last-of-type {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 0.4rem 0.75rem;
+}
+header section {
+  display: flex;
+}
+header .inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .inline p:first-of-type {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+header .inline p:last-of-type {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
