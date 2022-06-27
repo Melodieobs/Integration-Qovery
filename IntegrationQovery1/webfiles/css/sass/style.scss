@@ -1,47 +1,252 @@
-*{
+* {
     margin: 0;
 }
 
-header{
-    max-width: 1440px;
+body {
+    background-color: #F9F9FD;
+    ;
+}
+
+header {
     background-color: #151B2B;
-    color: #FFFFFF;
-    h1{
+    max-width: 100%;
+    margin-bottom: 6rem;
+
+    .entete {
+        padding-bottom: 9rem;
+        max-width: 1440px;
+        color: #FFFFFF;
+        margin: auto;
+
+        img[src="./src/img/LogotypelogoQ.png"] {
+            padding-top: 2.56rem;
+        }
+    }
+
+    h1 {
         font-size: 3rem;
     }
-    .ensemble{
+
+    .inline {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .ensemble {
         display: flex;
-        ul{
+
+        ul {
             display: flex;
             align-items: center;
             list-style: none;
-            li:first-of-type{
+
+            li:first-of-type {
                 display: flex;
                 background-color: #c2c2c2;
                 color: black;
-                padding: 0.35rem 2rem;
+                padding: 0.35rem 1.5rem;
             }
-            li:last-of-type{
+
+            li:last-of-type {
                 background-color: #FFFFFF;
                 color: black;
                 padding: 0.4rem 0.75rem;
             }
         }
     }
-    section{
+
+    .bouton {
         display: flex;
+        padding: 3rem 0;
+
+        a {
+            margin-right: 1.5rem;
+            font-size: 14px;
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 0.5rem;
+
+            &:first-of-type {
+                background-color: #454658;
+            }
+
+            &:last-of-type {
+                background-color: #6578C0;
+            }
+
+            img {
+                padding-right: 1rem;
+            }
+        }
     }
-    .inline{
+
+    img[src="./src/img/Group 225 1nav.png"] {
+        padding-left: 4.81rem;
+        width: 100%;
+        padding: 0 9rem;
+    }
+
+    section {
+        display: flex;
+        padding: 0 2rem;
+    }
+
+    .inline {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        p:first-of-type{
+
+        p:first-of-type {
             padding-top: 1.5rem;
             font-size: 1.5rem;
         }
-        p:last-of-type{
+
+        p:last-of-type {
             padding-top: 1.5rem;
             font-size: 1rem;
+        }
+    }
+}
+
+main {
+    .work {
+        max-width: 853px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .ensemble2 {
+        max-width: 853px;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+
+        .usage {
+            padding: 6.56rem 0;
+            text-align: center;
+        }
+
+        position: relative;
+
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 10%;
+            max-width: 750px;
+            left: 5%;
+        }
+
+        .code {
+            background-color: #FFFFFF;
+            padding: 1.5rem;
+            white-space: pre-line;
+
+            p {
+                margin-top: 1.5rem;
+            }
+
+            span{
+                background-color: #5D64D2;
+                border-radius: 3px;
+                color: #FFFFFF;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+        .bouton {
+            padding: 3rem 0;
+            a {
+                margin-right: 1.5rem;
+                font-size: 14px;
+                text-decoration: none;
+                color: #FFFFFF;
+                padding: 0.5rem;
+    
+                &:first-of-type {
+                    background-color: #454658;
+                }
+    
+                &:last-of-type {
+                    background-color: #6578C0;
+                }
+    
+                img {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .art1,
+    .art2 {
+        padding-top: 7.8rem;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .droite,
+        .gauche {
+            p {
+                padding: 1.5rem 0 0.75rem 0;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .droite {
+            padding-left: 13.93rem;
+            width: 408px
+        }
+
+        .gauche {
+            padding-left: 13.93rem;
+            width: 408px;
+        }
+
+    }
+    .leh3{
+        max-width: 390px;
+        margin: auto;
+        padding: 16.8rem 0 16.6rem 0;
+        text-align: center;
+    }
+}
+footer{
+    background-color: #FFFFFF;
+    .texte{
+        padding-top: 4rem;
+        width: 450px;
+    }
+    .bandenoir{
+        background-color: #151B2B;
+        max-width: 100%;
+        height: 100px;
+    }
+    img{
+        width: 20px;
+    }
+    .ensemble3{
+        display: flex;
+    }
+    .lien{
+        display: flex;
+        div{
+            padding: 4rem 2rem;
+        }
+        li{
+            list-style: none;
+            padding: 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            padding: 1rem 0;
+            color: #777881;
         }
     }
 }

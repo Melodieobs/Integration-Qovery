@@ -2,13 +2,30 @@
   margin: 0;
 }
 
+body {
+  background-color: #F9F9FD;
+}
+
 header {
-  max-width: 1440px;
   background-color: #151B2B;
+  max-width: 100%;
+  margin-bottom: 6rem;
+}
+header .entete {
+  padding-bottom: 9rem;
+  max-width: 1440px;
   color: #FFFFFF;
+  margin: auto;
+}
+header .entete img[src="./src/img/LogotypelogoQ.png"] {
+  padding-top: 2.56rem;
 }
 header h1 {
   font-size: 3rem;
+}
+header .inline {
+  max-width: 600px;
+  width: 100%;
 }
 header .ensemble {
   display: flex;
@@ -22,15 +39,41 @@ header .ensemble ul li:first-of-type {
   display: flex;
   background-color: #c2c2c2;
   color: black;
-  padding: 0.35rem 2rem;
+  padding: 0.35rem 1.5rem;
 }
 header .ensemble ul li:last-of-type {
   background-color: #FFFFFF;
   color: black;
   padding: 0.4rem 0.75rem;
 }
+header .bouton {
+  display: flex;
+  padding: 3rem 0;
+}
+header .bouton a {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+header .bouton a:first-of-type {
+  background-color: #454658;
+}
+header .bouton a:last-of-type {
+  background-color: #6578C0;
+}
+header .bouton a img {
+  padding-right: 1rem;
+}
+header img[src="./src/img/Group 225 1nav.png"] {
+  padding-left: 4.81rem;
+  width: 100%;
+  padding: 0 9rem;
+}
 header section {
   display: flex;
+  padding: 0 2rem;
 }
 header .inline {
   display: flex;
@@ -44,6 +87,137 @@ header .inline p:first-of-type {
 header .inline p:last-of-type {
   padding-top: 1.5rem;
   font-size: 1rem;
+}
+
+main .work {
+  max-width: 853px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+main .ensemble2 {
+  max-width: 853px;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+main .ensemble2 .usage {
+  padding: 6.56rem 0;
+  text-align: center;
+}
+main .ensemble2 img {
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  max-width: 750px;
+  left: 5%;
+}
+main .ensemble2 .code {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  white-space: pre-line;
+}
+main .ensemble2 .code p {
+  margin-top: 1.5rem;
+}
+main .ensemble2 .code span {
+  background-color: #5D64D2;
+  border-radius: 3px;
+  color: #FFFFFF;
+  padding: 0.25rem 0.5rem;
+}
+main .ensemble2 .bouton {
+  padding: 3rem 0;
+}
+main .ensemble2 .bouton a {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+main .ensemble2 .bouton a:first-of-type {
+  background-color: #454658;
+}
+main .ensemble2 .bouton a:last-of-type {
+  background-color: #6578C0;
+}
+main .ensemble2 .bouton a img {
+  padding-right: 1rem;
+}
+main .art1,
+main .art2 {
+  padding-top: 7.8rem;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .art1 .droite p,
+main .art1 .gauche p,
+main .art2 .droite p,
+main .art2 .gauche p {
+  padding: 1.5rem 0 0.75rem 0;
+}
+main .art1 .droite a,
+main .art1 .gauche a,
+main .art2 .droite a,
+main .art2 .gauche a {
+  text-decoration: none;
+}
+main .art1 .droite,
+main .art2 .droite {
+  padding-left: 13.93rem;
+  width: 408px;
+}
+main .art1 .gauche,
+main .art2 .gauche {
+  padding-left: 13.93rem;
+  width: 408px;
+}
+main .leh3 {
+  max-width: 390px;
+  margin: auto;
+  padding: 16.8rem 0 16.6rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #FFFFFF;
+}
+footer .texte {
+  padding-top: 4rem;
+  width: 450px;
+}
+footer .bandenoir {
+  background-color: #151B2B;
+  max-width: 100%;
+  height: 100px;
+}
+footer img {
+  width: 20px;
+}
+footer .ensemble3 {
+  display: flex;
+}
+footer .lien {
+  display: flex;
+}
+footer .lien div {
+  padding: 4rem 2rem;
+}
+footer .lien li {
+  list-style: none;
+  padding: 1rem 0;
+}
+footer .lien a {
+  text-decoration: none;
+  padding: 1rem 0;
+  color: #777881;
 }
 
 /*# sourceMappingURL=style.css.map */
