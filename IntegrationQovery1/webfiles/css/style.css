@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SF-UI-text";
+  src: url("../../../IntegrationQovery1/src/typo/sfuitext-light-webfont.woff2") format("woff2"), url("../../../IntegrationQovery1/src/typo/sfuitext-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "HK-Grotesk";
+  src: url("../../../IntegrationQovery1/src/typo/hkgrotesk-light-webfont.woff2") format("woff2"), url("../../../IntegrationQovery1/src/typo/hkgrotesk-light-webfont.woff") format("woff");
+}
 * {
   margin: 0;
 }
@@ -10,6 +18,7 @@ header {
   background-color: #151B2B;
   max-width: 100%;
   margin-bottom: 6rem;
+  font-family: SF-UI-text;
 }
 header .entete {
   padding-bottom: 9rem;
@@ -45,7 +54,16 @@ header .ensemble ul li:first-of-type {
 header .ensemble ul li:last-of-type {
   background-color: #FFFFFF;
   color: black;
-  padding: 0.4rem 0.75rem;
+  padding: 0.35rem 0.75rem;
+}
+header .ensemble p:last-of-type {
+  font-family: SF-UI-text;
+}
+header .ensemble p:first-of-type {
+  font-family: HK-Grotesk;
+}
+header .ensemble h1 {
+  font-family: HK-Grotesk;
 }
 header .bouton {
   display: flex;
@@ -93,6 +111,12 @@ header .inline p:last-of-type {
 
 main {
   padding: 1rem;
+}
+main h2, main h3 {
+  font-family: HK-Grotesk;
+}
+main p {
+  font-family: SF-UI-text;
 }
 main .work {
   max-width: 853px;
@@ -190,6 +214,7 @@ footer {
   background-color: #FFFFFF;
 }
 footer .texte {
+  padding-left: 2rem;
   padding-top: 4rem;
   width: 400px;
 }
@@ -259,7 +284,7 @@ footer .ensemble ul li:first-of-type {
 footer .ensemble ul li:last-of-type {
   background-color: #dddddd;
   color: black;
-  padding: 0.4rem 0.75rem;
+  padding: 0.37rem 0.75rem;
 }
 
 .dernpa {
@@ -311,6 +336,26 @@ footer .ensemble ul li:last-of-type {
   }
   footer .lien div {
     padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .inline {
+    flex-direction: column-reverse;
+  }
+  header .inline .bouton {
+    justify-content: center;
+  }
+  header .inline h1 {
+    font-size: 2rem;
+  }
+  main .ensemble2 {
+    left: 0;
+  }
+  main .art1 .droite, main .art1 .gauche, main .art2 .droite, main .art2 .gauche {
+    width: 100%;
+  }
+  main .art1 .droite img, main .art1 .gauche img, main .art2 .droite img, main .art2 .gauche img {
+    max-width: 265px;
   }
 }
 

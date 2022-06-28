@@ -1,16 +1,28 @@
+@font-face {
+    font-family: "SF-UI-text";
+    src: url("../../../IntegrationQovery1/src/typo/sfuitext-light-webfont.woff2") format("woff2"),
+         url("../../../IntegrationQovery1/src/typo/sfuitext-light-webfont.woff") format("woff");
+}
+@font-face {
+        font-family: "HK-Grotesk";
+        src: url("../../../IntegrationQovery1/src/typo/hkgrotesk-light-webfont.woff2") format("woff2"),
+             url("../../../IntegrationQovery1/src/typo/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+
 * {
     margin: 0;
 }
 
 body {
     background-color: #F9F9FD;
-    ;
 }
 
 header {
     background-color: #151B2B;
     max-width: 100%;
     margin-bottom: 6rem;
+    font-family: SF-UI-text;
 
     .entete {
         padding-bottom: 9rem;
@@ -51,8 +63,17 @@ header {
             li:last-of-type {
                 background-color: #FFFFFF;
                 color: black;
-                padding: 0.4rem 0.75rem;
+                padding: 0.35rem 0.75rem;
             }
+        }
+        p:last-of-type{
+            font-family: SF-UI-text;
+        }
+        p:first-of-type{
+            font-family: HK-Grotesk;
+        }
+        h1{
+            font-family: HK-Grotesk;
         }
     }
 
@@ -110,6 +131,12 @@ header {
 }
 
 main {
+    h2, h3{
+        font-family: HK-Grotesk;
+    }
+    p{
+        font-family: SF-UI-text;
+    }
     padding: 1rem;
     .work {
         max-width: 853px;
@@ -216,6 +243,7 @@ footer {
     background-color: #FFFFFF;
 
     .texte {
+        padding-left: 2rem;
         padding-top: 4rem;
         width: 400px;
 
@@ -297,7 +325,7 @@ footer {
             li:last-of-type {
                 background-color: #dddddd;
                 color: black;
-                padding: 0.4rem 0.75rem;
+                padding: 0.37rem 0.75rem;
             }
         }
     }
@@ -363,4 +391,29 @@ footer {
     }
 
 }    
-
+@media screen and(max-width: 425px){
+    header{
+        .inline{
+            flex-direction: column-reverse;
+            .bouton{
+                justify-content: center;
+            }
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+    main{
+        .ensemble2{
+            left: 0;
+        }
+        .art1, .art2{
+            .droite, .gauche{
+                width: 100%;
+                img{
+                    max-width: 265px;
+                }
+            }
+        }
+    }
+}
